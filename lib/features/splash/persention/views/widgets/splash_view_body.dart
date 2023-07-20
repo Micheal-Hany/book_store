@@ -14,6 +14,13 @@ class SplachViewBody extends StatelessWidget {
           AssestsData.logo,
           width: 300,
           height: 150,
+        ),
+        const Text(
+          'Read free Books',
+          style: TextStyle(
+            fontSize: 16,
+          ),
+          textAlign: TextAlign.center,
         )
       ],
     );

@@ -14,7 +14,7 @@ class BookStore extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const SplashView(),
-      theme: ThemeData().copyWith(scaffoldBackgroundColor: kprimeColor),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kprimeColor),
     );
   }
 }
