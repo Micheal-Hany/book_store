@@ -22,7 +22,7 @@ class HomeViewBody extends StatelessWidget {
           ),
           Text(
             'Best Seller',
-            style: Style.titleMedium,
+            style: Style.textStyle18,
           ),
           BestSellerListViewItem()
         ],
@@ -51,12 +51,26 @@ class BestSellerListViewItem extends StatelessWidget {
                       image: AssetImage(AssestsData.testImage))),
             ),
           ),
-          const Column(
+          const SizedBox(
+            width: 20,
+          ),
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('title'),
-              Text('decription'),
-              Row(
+              SizedBox(
+                width: MediaQuery.of(context).size.width * .5,
+                child: const Text(
+                  'Harray poter and the Gobolt of fire 1111111111111',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Style.textStyle20,
+                ),
+              ),
+              const Text(
+                'decription',
+                style: Style.textStyle18,
+              ),
+              const Row(
                 children: [Text('\$20'), Text('4.6 (500)')],
               )
             ],
