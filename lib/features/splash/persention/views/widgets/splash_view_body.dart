@@ -3,7 +3,7 @@ import 'package:book_store/core/utils/assests.dart';
 import 'package:book_store/features/home/persention/views/home_view.dart';
 import 'package:book_store/features/splash/persention/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class SplachViewBody extends StatefulWidget {
   const SplachViewBody({super.key});
@@ -59,8 +59,7 @@ class _SplachViewBodyState extends State<SplachViewBody>
 
   void NavigateToHomeView() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const HomeView(),
-          transition: Transition.fade, duration: ktranstionDurstion);
+      GoRouter.of(context).push('/hpmview');
     });
   }
 }
