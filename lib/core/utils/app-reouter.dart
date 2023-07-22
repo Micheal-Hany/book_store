@@ -1,3 +1,4 @@
+import 'package:book_store/features/home/persention/views/book-details-view.dart';
 import 'package:book_store/features/home/persention/views/home_view.dart';
 import 'package:book_store/features/splash/persention/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
@@ -11,8 +12,11 @@ static final router = GoRouter(
       builder: (context, state) => const SplashView(),
     ),
      GoRoute(
-      path: '/hpmview',
+      path: '/homeview',
       builder: (context, state) => const HomeView(),
+    ), GoRoute(
+      path: '/bookview',
+      builder: (context, state) => const BookView(),
     ),
   ],
 );
