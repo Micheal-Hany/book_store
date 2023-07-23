@@ -1,4 +1,3 @@
-
 import 'package:book_store/core/utils/style.dart';
 import 'package:flutter/material.dart';
 

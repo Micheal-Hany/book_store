@@ -33,7 +33,6 @@ class BookViewBody extends StatelessWidget {
                   Text(
                     'the jungle book',
                     style: Style.textStyle30
-                    
                         .copyWith(fontSize: 35, fontWeight: FontWeight.w400),
                   ),
                   const SizedBox(
