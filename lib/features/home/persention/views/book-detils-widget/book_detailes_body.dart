@@ -25,7 +25,7 @@ class BookViewBody extends StatelessWidget {
                     padding: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * .24,
                     ),
-                    child: const CustomBookImage(),
+                    child:  CustomBookImage(imageUrl: 'http://books.google.com/books/content?id=zsJlEK4nK7sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'),
                   ),
                   const SizedBox(
                     height: 15,
