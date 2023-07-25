@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:book_store/core/widgets/Custom%20error%20massage.dart';
 import 'package:book_store/core/widgets/custom%20loading%20indecator.dart';
 import 'package:book_store/features/home/persention/Manger/Featured%20Book%20cubit/featured_book_cubit.dart';
@@ -18,7 +20,7 @@ class FeatureBooksListView extends StatelessWidget {
           return SizedBox(
             height: MediaQuery.of(context).size.height * .3,
             child: ListView.builder(
-            physics: const BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               itemCount: state.booksList.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
@@ -32,7 +34,7 @@ class FeatureBooksListView extends StatelessWidget {
             ),
           );
         }
-        return const CustomLoadingIndecator();
+        return const Text('');
       },
     );
   }
