@@ -38,8 +38,11 @@ class SeatrchViewList extends StatelessWidget {
       itemCount: 10,
       itemBuilder: (context, index) {
         return const Padding(
-            padding: EdgeInsets.symmetric(vertical: 10),
-            child: BestSellerListViewItem());
+          padding: EdgeInsets.symmetric(vertical: 10),
+          child:
+              // BestSellerListViewItem(bookModel: ,)
+              Text('Serch List View'),
+        );
       },
     );
   }

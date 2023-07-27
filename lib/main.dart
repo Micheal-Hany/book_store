@@ -25,7 +25,8 @@ class BookStore extends StatelessWidget {
             ..fatchDataFeaturedBooks(),
         ),
         BlocProvider(
-          create: (context) => NewsedBookCubit(getIt.get<HomeRepoImpl>()),
+          create: (context) =>
+              NewsedBookCubit(getIt.get<HomeRepoImpl>())..fatchNewsedBooks(),
         )
       ],
       child: MaterialApp.router(

@@ -8,7 +8,7 @@ part 'newsed_book_state.dart';
 class NewsedBookCubit extends Cubit<NewsedBookState> {
   NewsedBookCubit(this.homeRepo) : super(NewsedBookInitial());
   final HomeRepo homeRepo;
-  Future<void> fatchDataFeaturedBooks() async {
+  Future<void> fatchNewsedBooks() async {
     emit(NewsedBookLoading());
 
     var result = (await homeRepo.fetkchNewstBooks());
